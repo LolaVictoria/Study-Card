@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Form from "./form";
 import Cards from "./card";
 import Heading from "./heading";
@@ -36,21 +35,21 @@ import Heading from "./heading";
 //     question:
 //       "What do we call an input element that is completely synchr
 const Flashcard = () => {
-   const [cards, setCards] = useState([])
+   
 
-   const handleUpdate = (card) =>{
-     setCards(cards=>[...cards, card])
-   }
+  //  const handleUpdate = (card) =>{
+  //    setCards(cards=>[...cards, card])
+  //  }
 
-   const handleDelete = (id) => {
-      setCards((cards) => cards.filter((card) => card.id !== id))
-   }
+  //  const handleDelete = (id) => {
+  //     setCards((cards) => cards.filter((card) => card.id !== id))
+  //  }
    
   return (
       <div className="mx-10">
         <Heading/>
-          <Form updateCards={handleUpdate} />
-          <Cards cardData={cards} updateDelete={handleDelete}/>
+          <Form  />
+          <Cards />
       </div>
   )
 }

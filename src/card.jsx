@@ -16,8 +16,6 @@ const Cards = () => {
 
     return(
         <div>
-
-        
         <div className="flashcards">
              {cards.map(ques => (
                <div key={ques.id}         
@@ -36,9 +34,9 @@ const Cards = () => {
              ))}
 
         </div>
-             <div>
+             <div className="">
              <p 
-              className="absolute bottom-0 left-1/2 font-semibold underline text-lg text-black flex"
+              className="absolute bottom-0 left-[40%] font-semibold underline text-lg text-black flex my-5"
               onClick={(e) => {
                 e.preventDefault()
                 navigate(-1)}}>

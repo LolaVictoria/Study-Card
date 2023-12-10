@@ -4,7 +4,7 @@ import { useStudy } from "../context/studyContext";
 const StartPage = () => {
     const { questionLength } = useStudy()
     return (
-        <div className="text-center mx-36 my-48">
+        <div className="lg:text-center mx-8 lg:mx-36 my-48">
             <h1 className="text-2xl font-bolder mb-6 ">Study Card</h1>
             <div className="mb-6">
                 <p>You have {questionLength} question and answers in your study card</p>

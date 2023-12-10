@@ -1,8 +1,11 @@
 import { useState } from "react"
 import { useStudy } from "./context/studyContext"
 import {FaTrashAlt} from "react-icons/fa"
+import { FaArrowLeftLong } from "react-icons/fa6"
+import { useNavigate } from "react-router-dom"
 
 const Cards = () => {
+    const navigate = useNavigate()
     const { cards, handleDelete} = useStudy()
 
     const [selectedId, setSelectedId] = useState(" ")
@@ -12,6 +15,9 @@ const Cards = () => {
     }
 
     return(
+        <div>
+
+        
         <div className="flashcards">
              {cards.map(ques => (
                <div key={ques.id}         
@@ -28,6 +34,18 @@ const Cards = () => {
                    </button> : ""}
               </div>
              ))}
+
+        </div>
+             <div>
+             <p 
+              className="absolute bottom-0 left-1/2 font-semibold underline text-lg text-black flex"
+              onClick={(e) => {
+                e.preventDefault()
+                navigate(-1)}}>
+                    <FaArrowLeftLong size={25}/>
+                  <span className="ml-3">Home</span>
+                </p>
+             </div>
         </div>
     )
 } 

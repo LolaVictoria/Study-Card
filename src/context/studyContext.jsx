@@ -31,7 +31,7 @@ const StudyProvider = ({children}) => {
    const changeAnswer = (e) => {
     setAnswer(e.target.value)
   }
-  const questionLength = question.length
+  const questionLength = cards.length
 
      return (
         <studyContext.Provider

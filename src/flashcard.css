@@ -134,3 +134,21 @@ input:focus {
     width: 200px;
   } */
 }
+
+.flashcard_info {
+  text-align: center;
+  margin: 15px auto;
+}
+
+.card_info {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.empty {
+  color: red;
+}
+
+.full {
+  color: green;
+}

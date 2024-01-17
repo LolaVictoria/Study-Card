@@ -16,7 +16,12 @@ const Cards = () => {
 
     return(
         <div>
+            <div className="flashcard_info">
+                {cards.length === 0 ? <p className="card_info empty">You don&apos;t have any study card yet</p> : 
+                 <p className="card_info full">Click on the cards to view to toggle betwen the question and answer</p>}
+            </div>
         <div className="flashcards">
+            
              {cards.map(ques => (
                <div key={ques.id}         
                    onClick={() => handleClick(ques.id)}

@@ -10,8 +10,7 @@ const StartPage = () => {
                 <p>You have {questionLength} question and answers in your study card</p>
             </div>
             <p className="mb-6 font-semibold text-lg">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga nesciunt reiciendis sed perspiciatis voluptates veniam eos necessitatibus autem blanditiis molestias dolorum, iste numquam cumque architecto sequi iusto ea aut, nam unde? Ipsum ut quibusdam natus numquam?
-            </p>
+            A study card platform designed to elevate your learning experience. Whether you&apos;re a student looking to optimize your study routine or an educator seeking interactive teaching tools, this project aims to enhance the way we absorb and retain information.            </p>
             <Link to="/lets-study">
 
             <button 
